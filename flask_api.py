@@ -24,7 +24,6 @@ def str_to_float_list(arg):
 loaded_clf = get_iris_model()
 #%%Postman
 def get_params_postman(request):
-    print("===================>", request.form.get("input"))
     sep_length = str_to_float_list(request.args.get("sepLen"))
     sep_width = str_to_float_list(request.args.get("sepWid"))
     pet_length = str_to_float_list(request.args.get("petLen"))
@@ -48,7 +47,6 @@ def predict_class_postman():
     y_pred = [str(x) for x in y_pred]
 
     response = {"y_pred": ",".join(y_pred)}
-    print("================>", response)
     return jsonify(response)
 
 
@@ -80,7 +78,6 @@ def predict_class_curl():
     y_pred = [str(x) for x in y_pred]
 
     response = {"y_pred": ",".join(y_pred)}
-    print("================>", response)
     return jsonify(response)
 
 
