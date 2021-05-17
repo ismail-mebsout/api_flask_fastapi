@@ -210,7 +210,7 @@ As expected, we get the same results:
 
 **HTTP codes:** if the request is correct the API returns the HTTP code **200**. There exist other codes such as _4xx_ for client error and _5xx_ for server error.
 
-<center><img src="imgs/API.png"></center>.
+<center><img src="imgs/API.png"></center>
 
 ---
 
