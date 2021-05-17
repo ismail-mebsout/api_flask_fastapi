@@ -2,7 +2,7 @@
 
 > Deploy your ML model as an API using Flask or FastApi
 
-<center><img src="imgs/provider_client.png", width=400></center>
+<center><img src="imgs/provider_client.png"></center>
 
 In this repository, you will find the following scripts which will enable you to transform your Data Science project into a consumable API:
 
