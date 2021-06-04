@@ -308,18 +308,22 @@ def predict_class_curl(input: str = Form(...)):
     response = {"y_pred": ",".join(y_pred)}
     return response
 
-
 #%%
 if __name__ == "__main__":
     uvicorn.run(FASTAPI_API, host="0.0.0.0", port=8080)
 ```
 
-[Uvicorn](https://www.uvicorn.org/) is a lightning-fast ASGI server implementation, using uvloop and httptools where uvloop is a Cython-based replacement for asyncio's event loop allowing 2-4 times faster than the default event loop.
+<!-- #%%
+if __name__ == "__main__":
+    uvicorn.run(FASTAPI_API, host="0.0.0.0", port=8080)
+``` -->
+
+<!-- [Uvicorn](https://www.uvicorn.org/) is a lightning-fast ASGI server implementation, using uvloop and httptools where uvloop is a Cython-based replacement for asyncio's event loop allowing 2-4 times faster than the default event loop.
 Uvicorn can be installed using the following command-line:
 
 ```bash
 pip install uvicorn
-```
+``` -->
 
 To launch the API, type:
 
